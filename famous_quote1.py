@@ -1,1 +1,0 @@
-print ('John Muir once said, "The mountains are calling and I must go."')

@@ -7,14 +7,19 @@ programming_words = {
 	' to the state of a program',
 	}
 
-word = 'list'
-print(word.title() + ": " + programming_words['list'])
+#old inefficient code
+# word = 'list'
+# print(word.title() + ": " + programming_words['list'])
 
-word = 'loop'
-print("\n" + word.title() + ": " + programming_words['loop'])
+# word = 'loop'
+# print("\n" + word.title() + ": " + programming_words['loop'])
 
-word = 'tuple'
-print("\n" + word.title() + ": " + programming_words['tuple'])
+# word = 'tuple'
+# print("\n" + word.title() + ": " + programming_words['tuple'])
 
-word = 'if statement'
-print("\n" + word.title() + ": " + programming_words['if statement'])
+# word = 'if statement'
+# print("\n" + word.title() + ": " + programming_words['if statement'])
+
+#new efficient code! 
+for key, value in programming_words.items():
+	print(key.title() + ": " + value + "\n")

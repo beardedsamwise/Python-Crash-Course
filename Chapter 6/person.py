@@ -1,11 +1,33 @@
-pepper = {
-	'first_name' : 'pepper',
-	'last_name' : 'the cat',
-	'age' : '7',
-	'city' : 'melbourne',
+alex = {
+	'first_name' : 'alex',
+	'last_name' : 'honnold',
+	'age' : '32',
+	'city' : 'yosemite',
 	}
 
-print(pepper['first_name'])
-print(pepper['last_name'])
-print(pepper['age'])
-print(pepper['city'])
+tommy = {
+	'first_name' : 'tommy',
+	'last_name' : 'caldwell',
+	'age' : '42',
+	'city' : 'yosemite',
+	}
+
+emily = {
+	'first_name' : 'emily',
+	'last_name' : 'harrington',
+	'age' : '31',
+	'city' : 'tahoe',
+	}
+
+people = [alex, tommy, emily]
+
+#old code
+# print(alex['first_name'])
+# print(alex['last_name'])
+# print(alex['age'])
+# print(alex['city'])
+
+for person in people:
+	print("Full Name: " + person['first_name'].title() + " " + person['last_name'].title())
+	print("Age: " + person['age'])
+	print("Location: " + person['city'].title() + "\n")

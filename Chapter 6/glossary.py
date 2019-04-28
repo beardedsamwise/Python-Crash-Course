@@ -1,8 +1,10 @@
 programming_words = {
 	'list' : 'A list is a collection of items in a particular order',
-	'loop' : 'Looping allows you to take the same action, or a set of actions with every item in a list',
+	'loop' : 'Looping allows you to take the same action, or a set of , ' \
+	'actions with every item in a list',
 	'tuple' : 'A tuple is a list with immutable items',
-	'if statement' : 'An if statement allows you to examine and respond to the state of a program',
+	'if statement' : 'An if statement allows you to examine and respond , ' \
+	' to the state of a program',
 	}
 
 word = 'list'

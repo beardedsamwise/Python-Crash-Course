@@ -1,4 +1,6 @@
 def make_great(magicians):
+	great_magicians = []
+
 	while magicians:
 		current_magician = magicians.pop().title() + ' the GREAT!'
 		great_magicians.append(current_magician)
@@ -10,7 +12,6 @@ def show_magicians(magicians):
 		print(magician.title() + ' is a magician!')
 
 magicians_list = ['harry houdini','david blaine','david copperfield']
-great_magicians = []
 
 make_great(magicians_list[:])
 

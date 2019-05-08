@@ -9,27 +9,22 @@ class Restaurant():
 	def describe_restaurant(self):
 		"""This method describes the restaurant."""
 		print('The restaurant is called ' + self.name.title() + 
-			' and it serves ' + self.cuisine.title() + '.')
+			' and it serves ' + self.cuisine.title() + '.\n')
 
 	def open_restaurant(self):
 		"""This method opens the restaurant."""
-		print(self.name.title() + " is now open!!!")
+		print(self.name.title() + " is now open!!!\n")
 
 restaurant1 = Restaurant('Shujinko','Ramen')
-
 restaurant1.describe_restaurant()
 restaurant1.open_restaurant()
 
-print('')
 
 restaurant2 = Restaurant('hakata gensuke','ramen')
-
 restaurant2.describe_restaurant()
 restaurant2.open_restaurant()
 
-print('')
 
 restaurant3 = Restaurant('oda sushi','sushi')
-
 restaurant3.describe_restaurant()
 restaurant3.open_restaurant()

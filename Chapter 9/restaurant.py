@@ -1,5 +1,5 @@
 class Restaurant():
-	"""This method is a simple attempt to model a restaurant."""
+	"""This class is a simple attempt to model a restaurant."""
 	
 	def __init__(self,restaurant_name,cuisine_type):
 		"""Initilise restaurant name and cuisine type attributes."""
@@ -9,16 +9,27 @@ class Restaurant():
 	def describe_restaurant(self):
 		"""This method describes the restaurant."""
 		print('The restaurant is called ' + self.name.title() + 
-			' and serves ' + self.cuisine.title() + '.')
+			' and it serves ' + self.cuisine.title() + '.')
 
 	def open_restaurant(self):
 		"""This method opens the restaurant."""
 		print(self.name.title() + " is now open!!!")
 
-my_restaurant = Restaurant('Shujinko','Ramen')
+restaurant1 = Restaurant('Shujinko','Ramen')
 
-print(my_restaurant.name)
-print(my_restaurant.cuisine + "\n") 
+restaurant1.describe_restaurant()
+restaurant1.open_restaurant()
 
-my_restaurant.describe_restaurant()
-my_restaurant.open_restaurant()
+print('')
+
+restaurant2 = Restaurant('hakata gensuke','ramen')
+
+restaurant2.describe_restaurant()
+restaurant2.open_restaurant()
+
+print('')
+
+restaurant3 = Restaurant('oda sushi','sushi')
+
+restaurant3.describe_restaurant()
+restaurant3.open_restaurant()

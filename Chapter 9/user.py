@@ -36,4 +36,4 @@ peter.greet_user()
 
 homer = User('homer','simpson','nuclear power plant','42')
 homer.describe_user()
-peter.greet_user()
+homer.greet_user()

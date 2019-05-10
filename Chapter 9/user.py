@@ -7,6 +7,7 @@ class User():
 		self.last_name = last_name.title()
 		self.department = department.title()
 		self.age = age
+		self.login_attempts = 0
 
 	def describe_user(self):
 		"""This method describes the user."""
@@ -26,9 +27,25 @@ class User():
 			'script!\n'
 			)
 
+	def increment_login_attempts(self):
+		"""This method increments the number of login attempts for a user"""
+
+		self.login_attempts += 1
+		print('FAILED LOGIN ATTEMPT!')
+		print('Login attempts: ' + str(self.login_attempts) + '\n')
+
+	def reset_login_attempts(self):
+		"""This method increments the number of login attempts for a user"""
+
+		self.login_attempts = 0
+		print('*Login attempts have been reset*')
+		print('Login attempts are now: ' + str(self.login_attempts) + '\n')
+
 sam = User('sam','bentley','information technology','22')
 sam.describe_user()
 sam.greet_user()
+sam.increment_login_attempts()
+sam.reset_login_attempts()
 
 peter = User('peter','griffin','drunk','45')
 peter.describe_user()

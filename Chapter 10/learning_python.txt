@@ -1,0 +1,6 @@
+In Python you can create strings
+In Python you can create dictionaries
+In Python you can create classes
+In Python you can create functions
+
+

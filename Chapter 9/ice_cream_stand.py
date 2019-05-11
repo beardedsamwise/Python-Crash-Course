@@ -18,16 +18,19 @@ class Restaurant():
 class IceCreamStand(Restaurant):
 	"""This class is a simple attempt to model an ice cream stand."""
 
-	def __init___(self,restaurant_name,cuisine_type='ice_cream'):
+	def __init__(self,restaurant_name,cuisine_type='ice cream'):
 		"""Init attributes of the parent class."""
-		super().__init___(restaurant_name,cuisine_type)
+		super().__init__(restaurant_name,cuisine_type)
 		self.flavours = []
 
 	def show_flavours(self):
+		"""Display the flavours available at the ice cream stand."""
 		print("We have these flavours available:")
 		for flavour in self.flavours:
-			print("- " + flavour)
+			print("- " + flavour.title())
 
 pidapipo = IceCreamStand('pidapipo')
+pidapipo.flavours = ['chocolate','vanilla']
 
 pidapipo.describe_restaurant()
+pidapipo.show_flavours()

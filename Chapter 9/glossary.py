@@ -2,7 +2,6 @@ from collections import OrderedDict
 
 programming_words = OrderedDict()
 
-
 programming_words = {
 	'list' : 'A list is a collection of items in a particular order',
 	'loop' : 'Looping allows you to take the same action, or a set of ' \

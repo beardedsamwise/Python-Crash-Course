@@ -40,17 +40,3 @@ class User():
 		self.login_attempts = 0
 		print('*Login attempts have been reset*')
 		print('Login attempts are now: ' + str(self.login_attempts) + '\n')
-
-sam = User('sam','bentley','information technology','22')
-sam.describe_user()
-sam.greet_user()
-sam.increment_login_attempts()
-sam.reset_login_attempts()
-
-peter = User('peter','griffin','drunk','45')
-peter.describe_user()
-peter.greet_user()
-
-homer = User('homer','simpson','nuclear power plant','42')
-homer.describe_user()
-homer.greet_user()

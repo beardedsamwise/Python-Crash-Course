@@ -3,7 +3,7 @@ print('This program will divide two numbers by each other and display' +
     ' of an integer.\n')
 while True:
     number1 = input('Enter the first number: ')
-    number2 = input('Enter the first number: ')
+    number2 = input('Enter the second number: ')
     try:
         number1 = int(number1)
         number2 = int(number2)

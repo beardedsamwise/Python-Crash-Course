@@ -8,7 +8,7 @@ while True:
 	if log_text == "q":
 		break
 	else:
-		with open (filename, 'a') as file_object:
+		with open (filename, 'w') as file_object:
 			file_object.write(log_text + '\n')
 
 

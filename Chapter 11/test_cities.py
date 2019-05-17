@@ -9,6 +9,6 @@ class CityTestCase(unittest.TestCase):
     def test_city_country(self):
         """Do locations like 'Melbourne, Australia' work?"""
         formatted_loc = city_country('melbourne','australia')
-        self.assertEqual(formatted_loc, 'Melbourne Australia')
+        self.assertEqual(formatted_loc, 'Melbourne, Australia')
 
 unittest.main()

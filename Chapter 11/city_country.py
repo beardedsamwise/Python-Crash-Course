@@ -1,2 +1,3 @@
 def city_country(city,country):
-    print(city.title() + " " + country.title())
+    full_city = (city.title() + ", " + country.title())
+    return full_city

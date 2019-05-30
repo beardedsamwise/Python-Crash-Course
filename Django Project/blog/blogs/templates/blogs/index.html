@@ -1,5 +1,8 @@
+{% extends "blogs/base.html" %}
+
 {% block content %}
 
+  <h1>SAM'S BLOG</h1>
   {% for post in posts %}
       <p>Title: {{ post.title }}</p>
       <p>Content: {{ post.text}}</p>

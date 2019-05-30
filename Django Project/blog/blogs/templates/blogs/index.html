@@ -1,14 +1,15 @@
 {% extends "blogs/base.html" %}
 
 {% block content %}
-
   <h1>SAM'S BLOG</h1>
+  
   {% for post in posts %}
-      <p>Title: {{ post.title }}</p>
-      <p>Content: {{ post.text}}</p>
-      ------------------------------
+      <h2>{{ post.title }}</h2>
+      <p>{{ post.text }}</p>
+
   {% empty %}
     <li>There are no entries yet.</li>
 
   {% endfor %}
+
 {% endblock content %}

@@ -1,11 +1,12 @@
 {% extends "blogs/base.html" %}
 
 {% block content %}
-  <h1>SAM'S BLOG</h1>
+  <h1>Sam's Blog</h1>
   
   {% for post in posts %}
-      <h2>{{ post.title }}</h2>
-      <p>{{ post.text }}</p>
+      <h3>Title: {{ post.title }}</h3>
+      <p>Date: {{ post.date_added }}</p>
+      <p>Content: {{ post.text }}</p>
       <p>
         <a href="{% url 'blogs:editblog' post.id %}">edit entry</a>
       </p>

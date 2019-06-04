@@ -6,7 +6,9 @@
   {% for post in posts %}
       <h2>{{ post.title }}</h2>
       <p>{{ post.text }}</p>
-
+      <p>
+        <a href="{% url 'blogs:editblog' post.id %}">edit entry</a>
+      </p>
   {% empty %}
     <li>There are no entries yet.</li>
 

@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
 from django.urls import reverse
+from django.contrib.auth.decorators import login_required
 
 from .models import BlogPost
 from .forms import BlogForm
@@ -11,6 +12,7 @@ def index(request):
     context = {'posts' : posts}
     return render(request, 'blogs/index.html', context)
 
+@login_required
 def newblog(request):
     """Form for users to add new blog posts."""
     if request.method != 'POST':
@@ -26,6 +28,7 @@ def newblog(request):
     context = {'form': form}
     return render(request, 'blogs/newblog.html', context)
 
+@login_required
 def editblog(request, entry_id):
     """Edit an existing blog entry."""
     entry = BlogPost.objects.get(id=entry_id)

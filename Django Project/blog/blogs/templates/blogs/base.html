@@ -3,6 +3,7 @@
   <a href="{% url 'blogs:newblog' %}">New Post</a> -
   {% if user.is_authenticated %}
     Welcome back, {{ user.username }}.
+    <a href="{% url 'users:logout' %}">Log out</a>
   {% else %}
     <a href="{% url 'users:login' %}">Log in</a>
   {% endif %}

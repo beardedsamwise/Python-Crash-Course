@@ -22,7 +22,9 @@ def newblog(request):
         # POST data submitted; process data.
         form = BlogForm(data=request.POST)
         if form.is_valid():
-            form.save()
+            new_post = form.save(commit=False)
+            new_post.owner = request.user
+            new_post.save()
             return HttpResponseRedirect(reverse('blogs:index'))
         
     context = {'form': form}

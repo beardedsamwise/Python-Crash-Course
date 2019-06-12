@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     # My apps
     'blogs',
     'users',
+    # Third party apps
+    'bootstrap3',
 ]
 
 MIDDLEWARE = [
@@ -125,3 +127,8 @@ STATIC_URL = '/static/'
 # My settings
 LOGOUT_REDIRECT_URL = '/'
 LOGIN_URL = '/login/'
+
+# Settings for django-bootstrap3
+BOOTSTRAP3 = {
+    'include_jquery': True,
+}

@@ -1,18 +1,31 @@
 {% extends "blogs/base.html" %}
 
+{% block header %}
+  <div class="jumbotron">
+    <h1>Sam's Django Blog</h1>
+  </div>
+{% endblock header %}
+
 {% block content %}
-  <h1>Sam's Blog</h1>
   
   {% for post in posts %}
-      <h3>Title: {{ post.title }}</h3>
-      <p>Date: {{ post.date_added }}</p>
-      <p>Content: {{ post.text }}</p>
-      <p>
-        <a href="{% url 'blogs:editblog' post.id %}">edit entry</a>
-      </p>
-  {% empty %}
-    <li>There are no entries yet.</li>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>
+          {{ post.title }}
+          <small>
+            <a href="{% url 'blogs:editblog' post.id %}">edit entry</a>
+          </small>
+        </h3>
+      </div>
+      <div class="panel-body">
+        {{post.text|linebreaks}}
+        Date added: {{ post.date_added }}
+      </div>
+    </div> <!-- panel -->
 
+  {% empty %}
+    There are no entries yet.
   {% endfor %}
 
 {% endblock content %}
